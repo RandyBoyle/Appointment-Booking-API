@@ -9,10 +9,25 @@
             return _appointments;
         }
 
+        public Appointment? GetById(Guid id)
+        {
+            return _appointments.FirstOrDefault(a => a.Id == id);
+        }
+
         public void Add(Appointment appointment)
         {
-            appointment.Id = _appointments.Count + 1;
             _appointments.Add(appointment);
         }
+
+        public bool Remove(Guid id)
+        {
+            var appointment = GetById(id);
+            if (appointment == null)
+                return false;
+
+            _appointments.Remove(appointment);
+            return true;
+        }
     }
+
 }
