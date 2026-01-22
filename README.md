@@ -1,13 +1,34 @@
 # Appointment-Booking-API
-A simple .NET 8 Minimal API for managing appointment bookings.
+A simple **.NET 8 Minimal API** for managing appointment bookings.  
+Built as a small, real-world example using **feature-based structure** and clean, readable code.
 
-A lightweight appointment booking backend built with:
-- .NET 8
-- Minimal APIs
-- Feature-Based Architecture
-
-Features:
+## 🚀 Features
 - Create appointments
 - View all appointments
+- View a single appointment by ID
+- Delete appointments
 
-Designed for small businesses that need a simple booking backend.
+## 🛠 Tech Stack
+- .NET 8
+- ASP.NET Core Minimal APIs
+- In-memory data store (for simplicity)
+
+## ▶️ Running the API
+1. Clone the repository
+2. Open the solution in Visual Studio or VS Code
+3. Run the project
+4. The API will be available at:
+
+https://localhost:5001
+
+## 📌 Example Endpoints
+GET /appointments
+GET /appointments/{id}
+POST /appointments
+DELETE /appointments/{id}
+
+## 🎯 Purpose
+This project is intentionally kept small and simple to demonstrate:
+- Practical Minimal API usage
+- Feature-based organization
+- Readable, maintainable API design
