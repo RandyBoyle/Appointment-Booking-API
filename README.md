@@ -22,10 +22,10 @@ Built as a small, real-world example using **feature-based structure** and clean
 https://localhost:5001
 
 ## 📌 Example Endpoints
-GET /appointments
-GET /appointments/{id}
-POST /appointments
-DELETE /appointments/{id}
+- GET /appointments
+- GET /appointments/{id}
+- POST /appointments
+- DELETE /appointments/{id}
 
 ## 🎯 Purpose
 This project is intentionally kept small and simple to demonstrate:
